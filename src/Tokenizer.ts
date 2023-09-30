@@ -1,9 +1,5 @@
 import { tokenizerReturnType, TokenInterface } from './Types';
 
-console.log('compiling...');
-
-const input = '(concat "hell" "o")';
-
 function tokenizer(input: string): tokenizerReturnType {
     let tokens: tokenizerReturnType = [];
 
@@ -83,4 +79,4 @@ function tokenizer(input: string): tokenizerReturnType {
     return tokens;
 }
 
-tokenizer(input);
+export default tokenizer;
