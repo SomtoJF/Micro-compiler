@@ -2,16 +2,21 @@
     "name": "Micro-compiler",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "private": true,
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon main.js",
-        "format": "pnpm exec prettier . --write"
+        "start": "nodemon ./dist/bundle.js",
+        "format": "pnpm exec prettier . --write",
+        "build": "webpack"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "prettier": "3.0.3"
+        "prettier": "3.0.3",
+        "ts-loader": "^9.4.4",
+        "typescript": "^5.2.2",
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4"
     }
 }
