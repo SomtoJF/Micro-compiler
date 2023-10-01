@@ -1,19 +1,20 @@
 interface TokenInterface {
-    type: string;
+    type: 'number' | 'paren' | 'string' | 'name';
     value: string;
 }
 
 type tokenizerReturnType = TokenInterface[];
+type ASTNodeTypes = 'NumberLiteral' | 'StringLiteral' | 'CallExpression';
 
 interface ASTBodyInterface {
-    type: string;
+    type: ASTNodeTypes;
     name?: string;
     value?: string;
     params?: ASTBodyInterface[];
 }
 
 interface ASTInterface {
-    type: string;
+    type: 'Program' | ASTNodeTypes;
     body: ASTBodyInterface[];
 }
 
