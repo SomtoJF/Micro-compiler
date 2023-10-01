@@ -75,7 +75,6 @@ function tokenizer(input: string): tokenizerReturnType {
             tokens.push({ type: 'name', value });
         }
     }
-    console.log(tokens);
     return tokens;
 }
 
