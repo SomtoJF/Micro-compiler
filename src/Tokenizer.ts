@@ -74,6 +74,9 @@ function tokenizer(input: string): tokenizerReturnType {
             }
             tokens.push({ type: 'name', value });
         }
+        throw new TypeError(
+            'Micro-compiler cannot identify this character: ' + char
+        );
     }
     return tokens;
 }
