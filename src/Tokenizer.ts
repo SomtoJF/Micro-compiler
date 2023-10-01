@@ -1,4 +1,4 @@
-import { tokenizerReturnType, TokenInterface } from './Types';
+import { tokenizerReturnType } from './Types';
 
 function tokenizer(input: string): tokenizerReturnType {
     let tokens: tokenizerReturnType = [];
@@ -73,6 +73,7 @@ function tokenizer(input: string): tokenizerReturnType {
                 char = input[++current];
             }
             tokens.push({ type: 'name', value });
+            continue;
         }
         throw new TypeError(
             'Micro-compiler cannot identify this character: ' + char
