@@ -10,7 +10,7 @@ This is a super small compiler built in TypeScript to compile lisp-like function
 
 * Parsing
 This is the first stage of code compilation. It involves representing your code in two different ways which are as *Tokens* and as an *Abstract Syntax Tree (AST)*. These are known as Lexical Analysis and Syntatic Analysis respectively.
-** Tokenization
+** Lexical Analysis (Tokenization)
 According to jamiebuilds, Tokens are an array of tiny little objects that describe an isolated piece of the syntax. They could be numbers, labels, punctuation, operators, whatever.
 For the following syntax:
 

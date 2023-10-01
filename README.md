@@ -1,13 +1,13 @@
 
 # Table of Contents
 
-1.  [Micro-Compiler](#org60e48af)
-2.  [Parsing](#org7c9a2ca)
-    1.  [Tokenization](#org55e899d)
+1.  [Micro-Compiler](#orga3b407c)
+2.  [Parsing](#org40ddbb4)
+    1.  [Lexical Analysis (Tokenization)](#org089122e)
 
 
 
-<a id="org60e48af"></a>
+<a id="orga3b407c"></a>
 
 # Micro-Compiler
 
@@ -18,16 +18,16 @@ This is a super small compiler built in TypeScript to compile lisp-like function
 3.  Code Generation.
 
 
-<a id="org7c9a2ca"></a>
+<a id="org40ddbb4"></a>
 
 # Parsing
 
 This is the first stage of code compilation. It involves representing your code in two different ways which are as **Tokens** and as an **Abstract Syntax Tree (AST)**. These are known as Lexical Analysis and Syntatic Analysis respectively.
 
 
-<a id="org55e899d"></a>
+<a id="org089122e"></a>
 
-## Tokenization
+## Lexical Analysis (Tokenization)
 
 According to jamiebuilds, Tokens are an array of tiny little objects that describe an isolated piece of the syntax. They could be numbers, labels, punctuation, operators, whatever.
 For the following syntax:
