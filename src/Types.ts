@@ -5,4 +5,16 @@ interface TokenInterface {
 
 type tokenizerReturnType = TokenInterface[];
 
-export { TokenInterface, tokenizerReturnType };
+interface ASTBodyInterface {
+    type: string;
+    name?: string;
+    value?: string;
+    params?: ASTBodyInterface[];
+}
+
+interface ASTInterface {
+    type: string;
+    body: ASTBodyInterface[];
+}
+
+export { tokenizerReturnType, ASTInterface };
