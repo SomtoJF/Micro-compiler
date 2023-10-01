@@ -1,7 +1,13 @@
 import tokenize from './Tokenizer';
+import parser from './Parser';
 
-console.log('compiling...');
+const input = '(add 2 (subtract 6 4))';
 
-const input = '(add 2 (subtract 6 2))';
+function compile(input: string) {
+    console.log('compiling...');
+    const TOKENS = tokenize(input);
+    const AST = parser(TOKENS);
+    console.log(AST.body);
+}
 
-console.log(tokenize(input));
+compile(input);
