@@ -18,4 +18,4 @@ interface ASTInterface {
     body: ASTBodyInterface[];
 }
 
-export { tokenizerReturnType, ASTInterface };
+export { tokenizerReturnType, ASTInterface, ASTBodyInterface };
