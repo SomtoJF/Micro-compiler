@@ -42,7 +42,7 @@ This is done by a function called a tokenizer or lexer which
 3. Returns the array of tokens.
 
 ** Syntatic Analysis (Abstract Syntax Tree)
-An Abstract Syntax Tree is an object which describes each part of the code (syntax) and their relationship to one another.
+During syntatic analysis, the array of tokens are converted into an *Abstract Syntax Tree* which is an object which describes each part of the code (syntax) and their relationship to one another.
 The Token:
 #+BEGIN_SRC js
 // Tokens
@@ -85,4 +85,4 @@ The Token:
     }
  #+END_SRC
 
- This will be achieved using Recursion. See the [[./src/Traverser.ts]] file.
+ This will be achieved using Recursion. See the [[./src/Parser.ts][Parser.ts]] file.

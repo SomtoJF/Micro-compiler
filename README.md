@@ -1,14 +1,14 @@
 
 # Table of Contents
 
-1.  [Micro-Compiler](#orgb7d82e1)
-2.  [Parsing](#orgd123b28)
-    1.  [Lexical Analysis (Tokenization)](#orgdf43ac5)
-    2.  [Syntatic Analysis (Abstract Syntax Tree)](#orgf530ad6)
+1.  [Micro-Compiler](#orgc520ed2)
+2.  [Parsing](#org0e128b7)
+    1.  [Lexical Analysis (Tokenization)](#orgc54b3f4)
+    2.  [Syntatic Analysis (Abstract Syntax Tree)](#orgbf4a8bc)
 
 
 
-<a id="orgb7d82e1"></a>
+<a id="orgc520ed2"></a>
 
 # Micro-Compiler
 
@@ -19,14 +19,14 @@ This is a super small compiler built in TypeScript to compile lisp-like function
 3.  Code Generation.
 
 
-<a id="orgd123b28"></a>
+<a id="org0e128b7"></a>
 
 # Parsing
 
 This is the first stage of code compilation. It involves representing your code in two different ways which are as **Tokens** and as an **Abstract Syntax Tree (AST)**. These are known as Lexical Analysis and Syntatic Analysis respectively.
 
 
-<a id="orgdf43ac5"></a>
+<a id="orgc54b3f4"></a>
 
 ## Lexical Analysis (Tokenization)
 
@@ -58,11 +58,11 @@ This is done by a function called a tokenizer or lexer which
 3.  Returns the array of tokens.
 
 
-<a id="orgf530ad6"></a>
+<a id="orgbf4a8bc"></a>
 
 ## Syntatic Analysis (Abstract Syntax Tree)
 
-An Abstract Syntax Tree is an object which describes each part of the code (syntax) and their relationship to one another.
+During syntatic analysis, the array of tokens are converted into an **Abstract Syntax Tree** which is an object which describes each part of the code (syntax) and their relationship to one another.
 The Token:
 
     // Tokens
@@ -103,5 +103,5 @@ will become:
           }]
         }
 
-This will be achieved using Recursion. See the <./src/Traverser.ts> file.
+This will be achieved using Recursion. See the [Parser.ts](./src/Parser.ts) file.
 
